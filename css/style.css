@@ -1108,7 +1108,7 @@ select {
       margin-bottom: 0; } }
   @media (min-width: 992px) {
     .footer__textLogo {
-      min-width: 20%;
+      min-width: 15%;
       font-size: 1.325rem; } }
 
 .footer__data {
@@ -1178,8 +1178,8 @@ select {
     flex-shrink: 0; } }
 
 .auth__media img, .auth__media svg {
-  max-height: 150px;
-  max-width: 90%;
+  /* max-height: 150px;
+  max-width: 90%; */
   -webkit-user-drag: none;
   -khtml-user-drag: none;
   -moz-user-drag: none;
