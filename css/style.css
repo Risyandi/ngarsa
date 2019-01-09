@@ -734,7 +734,7 @@ select {
   position: fixed;
   z-index: 100;
   width: 100%;
-  background-color: #6C63FF;
+  background-color: #1562ff;
   transition: 0.7s; }
   .navbar--nofixed {
     position: relative;
