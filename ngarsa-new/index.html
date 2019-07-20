@@ -481,10 +481,28 @@
             <div class="row">
                 <div class="col-lg-6" id="contact">
                     <h4> Contact Us </h4>
-                    <input type="text" class="form-control" placeholder="Full Name">
+                    <!-- <input type="text" class="form-control" placeholder="Full Name">
                     <input type="email" class="form-control" placeholder="Email Address">
                     <textarea class="form-control" placeholder="Message"></textarea>
-                    <a href="#" class="submit-button">Send <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    <a href="#" class="submit-button">Send <i class="fa fa-angle-right" aria-hidden="true"></i></a> -->
+                    <!-- start -->
+                    <form action="https://mailthis.to/hello@ngarsa.com" method="POST" encType="multipart/form-data">
+						<label>Full Name</label>
+						<input type="text" class="form-control" id='full-name' name="name" placeholder="Enter your full name here">
+						<label>Email</label>
+						<input type="email" class="form-control" id='email' name="_replyto" placeholder="Enter your email here">
+						<label>Message</label>
+                        <textarea class="form-control" name="message" placeholder="Enter your message here"></textarea>
+                        <div>
+                            <input type="submit" id="send-message-yes" class="submit-button" value="Send" style="display: none;">
+                            <div>
+                            <a href="#" class="submit-button send-message">Send
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                            </div>  
+                        </div>
+					</form>
+
                 </div>
                 <div class="col-lg-6">
                     <div class="row">
