@@ -1,3 +1,6 @@
+// wow init
+new WOW().init();
+
 ; (function () {
     'use strict';
 
