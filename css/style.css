@@ -43,6 +43,10 @@
     src: url(../fonts/OpenSans-Semibold.ttf);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 p {
     font-family: "OpenSans-Regular";
     color: #666666;
@@ -63,6 +67,8 @@ body {
 
 #gtco-main-nav .no-border {
     border-color: transparent;
+    outline: 0;
+    outline: none;
 }
 
 #gtco-main-nav .navbar-brand {
@@ -952,6 +958,11 @@ body {
 }
 
 @media (max-width: 385px) {
+    *:focus {
+        outline: 0;
+        outline: none;
+    }
+
     #gtco-footer .follow-us-nav a {
         padding-right: 0;
     }
