@@ -87,7 +87,7 @@ body {
     -o-text-fill-color: transparent;
 }
 
-#gtco-main-nav .logo-brand img{
+#gtco-main-nav .logo-brand img {
     width: 200px;
 }
 
@@ -172,8 +172,9 @@ body {
         height: 550px;
         width: 800px;
     }
+
     #gtco-main-nav .navbar-nav li a {
-        color: rgba(0,0,0,.5);
+        color: rgba(0, 0, 0, .5);
     }
 }
 
@@ -609,6 +610,7 @@ body {
     .gtco-numbers-block p {
         line-height: 1.1;
     }
+
     #gtco-main-nav .navbar-nav li a {
         color: #007bff;
     }
@@ -620,9 +622,10 @@ body {
     }
 
     .bg-light {
-        background-color: #f8f9fa!important;
+        background-color: #f8f9fa !important;
     }
-    .bg-transparent { 
+
+    .bg-transparent {
         background-color: none;
     }
 }
@@ -631,6 +634,7 @@ body {
     .gtco-numbers-block p {
         font-size: 8px;
     }
+
     #gtco-main-nav .navbar-nav li a {
         color: #007bff;
     }
@@ -642,9 +646,10 @@ body {
     }
 
     .bg-light {
-        background-color: #f8f9fa!important;
+        background-color: #f8f9fa !important;
     }
-    .bg-transparent { 
+
+    .bg-transparent {
         background-color: none;
     }
 }
@@ -978,9 +983,10 @@ body {
     }
 
     .bg-light {
-        background-color: #f8f9fa!important;
+        background-color: #f8f9fa !important;
     }
-    .bg-transparent { 
+
+    .bg-transparent {
         background-color: none;
     }
 }
