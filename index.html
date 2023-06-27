@@ -94,6 +94,14 @@
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
+                <div class="btn-group pl-3 pr-3">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-language fa-lg" aria-hidden="true"></i> Language
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item" onclick="changesLanguage('en')">English</div>
+                        <div class="dropdown-item" onclick="changesLanguage('id')">Indonesia</div>
+                  </div>
             </div>
         </div>
     </nav>
@@ -106,9 +114,9 @@
                     <h1>
                         We brings good <span>Quality</span> and <span>Solution</span> come to you.
                     </h1>
-                    <p>At ngarsa digital we made with quality for getting excellence of something we do, and we provide
+                    <p id="banner-desc">At ngarsa digital we made with quality for getting excellence of something we do, and we provide
                         solutions to solve your problems.</p>
-                    <a href="#contact">Contact Us <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    <a href="#contact"> <span id="banner-desc-contact">Contact Us</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
                 </div>
                 <div class="col-md-6 fadeInRight wow" data-wow-duration="1s">
                     <div class="card"><img class="card-img-top img-fluid" src="assets/images/personality.svg" alt="">
@@ -152,16 +160,16 @@
                     </div>
                 </div>
                 <div class="col-md-5 fadeInRight wow" data-wow-duration="1s">
-                    <h2> We are a Creative Digital
+                    <h2 id="about-desc1"> We are a Creative Digital
                         Agency.</h2>
-                    <p>Ngarsa Digital a Creative Digital Agency. We specialize in giving
+                    <p id="about-desc2">Ngarsa Digital a Creative Digital Agency. We specialize in giving
                         digital creative strategies and solutions to our Clients.</p>
-                    <p>We mission is to provide strategic communications that aim at delivering a clear and unique
+                    <p id="about-desc3">We mission is to provide strategic communications that aim at delivering a clear and unique
                         selling proposition and high-quality creative digital services for Indonesian local brands to
                         have
                         meaningful conversations with their consumers, delivered consistently in the fastest time
                         possible.</p>
-                    <small>*) /ng-/arsa is has meaning namely (front/start/main)</small>
+                    <small id="about-desc4">*) /ng-/arsa is has meaning namely (front/start/main)</small>
                     </p>
                     <!-- <a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a> -->
                 </div>
@@ -174,9 +182,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 fadeInLeft wow" data-wow-duration="1s">
-                    <h2> Explore The Services<br />
+                    <h2 id="service-desc1"> Explore The Services<br />
                         We Offer For You </h2>
-                    <p>We can help you realize your digital project such as a website company profile, graphic design,
+                    <p id="service-desc2">We can help you realize your digital project such as a website company profile, graphic design,
                         web design, photography, and support your business performance using Marketing technology.</p>
                     <!-- <a href="#">All Services <i class="fa fa-angle-right" aria-hidden="true"></i></a> -->
                 </div>
@@ -348,17 +356,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 fadeInLeft wow" id="contact" data-wow-duration="1s">
-                    <h4> Contact Us </h4>
+                    <h4 id="footer-desc-contact"> Contact Us </h4>
                     <form action="https://formsubmit.co/hello@ngarsa.com" method="POST" encType="multipart/form-data">
-                        <label>Full Name *</label>
+                        <label id="footer-contact-name">Full Name *</label>
                         <input type="text" class="form-control" id='full-name' name="name"
                             placeholder="Enter your full name here" required>
-                        <label>Email *</label>
+                        <label id="footer-contact-email">Email *</label>
                         <input type="email" class="form-control" id='email' name="email"
                             placeholder="Enter your email here" required>
-                        <label>Message *</label>
-                        <textarea class="form-control" name="message" placeholder="Enter your message here" required></textarea>
-                        <label>(*) required to filled</label>
+                        <label id="footer-contact-message">Message *</label>
+                        <textarea class="form-control" name="message" id="message" placeholder="Enter your message here" required></textarea>
+                        <label id="mandatory">(*) required to filled</label>
                         <div>
                             <!-- formsubmit hidden -->
 							<input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase, gambling, investment">
@@ -367,11 +375,10 @@
 							<input type="hidden" name="_autoresponse" value="Thank you for reach me out on this form contact and submitted your message. -- ngarsa.com">
 							<input type="hidden" name="_template" value="basic">
 							<input type="hidden" name="_next" value="https://ngarsa.com/">
-
                             <input type="submit" id="send-message-yes" class="submit-button" value="Send"
                                 style="display: none;">
                             <div>
-                                <a href="#send-message-yes" class="submit-button send-message">Send
+                                <a href="#send-message-yes" class="submit-button send-message"><span id="form-send">Send</span>
                                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                                 </a>
                             </div>
@@ -382,12 +389,12 @@
                 <div class="col-lg-6 fadeInRight wow" data-wow-duration="1s">
                     <div class="row">
                         <div class="col-6">
-                            <h4>Partner</h4>
+                            <h4 id="footer-partner">Partner</h4>
                             <ul class="nav flex-column company-nav">
                                 <li class="nav-item"><a class="nav-link"
                                         href="https://risyandi.com/">Risyandi</a></li>
                             </ul>
-                            <h4 class="mt-5">Follow Us</h4>
+                            <h4 class="mt-5" id="footer-followus">Follow Us</h4>
                             <ul class="nav follow-us-nav">
                                 <li class="nav-item"><a class="nav-link pl-0"
                                         href="https://ngarsa.page.link/facebook-ngarsa"><i class="fa fa-facebook"
@@ -401,7 +408,7 @@
                             </ul>
                         </div>
                         <div class="col-6">
-                            <h4>Our Services</h4>
+                            <h4 id="footer-ourservice">Our Services</h4>
                             <ul class="nav flex-column services-nav">
                                 <li class="nav-item"><a class="nav-link" href="#services">Web & Creative</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#services">Marketing Technology</a></li>
