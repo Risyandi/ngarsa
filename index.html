@@ -89,10 +89,10 @@
                     class="bar3"></span></button>
             <div id="my-nav" class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" id="menu1" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" id="menu2" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" id="menu3" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" id="menu4" href="#contact">Contact</a></li>
                 </ul>
                 <div class="btn-group pl-3 pr-3">
                     <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -205,16 +205,16 @@
                                 <div class="oval"><img class="card-img-top" src="assets/images/web-design.png" alt="">
                                 </div>
                                 <div class="card-body">
-                                    <h3 class="card-title">Web & Creative</h3>
-                                    <p class="card-text">We makes web and interactive design a simple and iconic.</p>
+                                    <h3 class="card-title" id="service-item-title1">Web & Creative</h3>
+                                    <p class="card-text" id="service-item-desc1">We makes web and interactive design a simple and iconic.</p>
                                 </div>
                             </div>
                             <div class="card text-center">
                                 <div class="oval"><img class="card-img-top" src="assets/images/marketing.png" alt="">
                                 </div>
                                 <div class="card-body">
-                                    <h3 class="card-title">Marketing Technology</h3>
-                                    <p class="card-text">We provide solution for delivering campaign with Marketing
+                                    <h3 class="card-title" id="service-item-title2">Marketing Technology</h3>
+                                    <p class="card-text" id="service-item-desc2">We provide solution for delivering campaign with Marketing
                                         Technology clear and unique.
                                     </p>
                                 </div>
@@ -224,8 +224,8 @@
                             <div class="card text-center">
                                 <div class="oval"><img class="card-img-top" src="assets/images/seo.png" alt=""></div>
                                 <div class="card-body">
-                                    <h3 class="card-title">SEO & Analytics</h3>
-                                    <p class="card-text">We accelerate up your page to be found in search.</p>
+                                    <h3 class="card-title" id="service-item-title3">SEO & Analytics</h3>
+                                    <p class="card-text" id="service-item-desc3">We accelerate up your page to be found in search.</p>
                                 </div>
                             </div>
                             <div class="card text-center">
@@ -233,8 +233,8 @@
                                         alt="">
                                 </div>
                                 <div class="card-body">
-                                    <h3 class="card-title">Design & Branding</h3>
-                                    <p class="card-text">We makes design a simple, elegant and iconic. for your brands
+                                    <h3 class="card-title" id="service-item-title4">Design & Branding</h3>
+                                    <p class="card-text" id="service-item-desc4">We makes design a simple, elegant and iconic. for your brands
                                     </p>
                                 </div>
                             </div>
@@ -248,14 +248,16 @@
     <!-- why us -->
     <div class="container-fluid gtco-features-list">
         <div class="container gtco-news">
-            <h2>Why Us</h2>
+            <h2 id="whyus-title">Why Us</h2>
             <div class="row">
                 <div class="media col-md-6 col-lg-4 fadeInLeft wow" data-wow-duration="1s">
                     <div class="oval mr-4"><img class="align-self-start" src="assets/images/quality-results.png" alt="">
                     </div>
                     <div class="media-body">
-                        <h5 class="mb-0">Quality Results</h5>
-                        At ngarsa digital, we provide the best quality according to what you need.
+                        <h5 class="mb-0" id="whyus-sub-title1">Quality Results</h5>
+                        <span id="whyus-sub-desc1">
+                            At ngarsa digital, we provide the best quality according to what you need.
+                        </span>
                     </div>
                 </div>
                 <div class="media col-md-6 col-lg-4 fadeInUp wow" data-wow-duration="1s">
@@ -263,17 +265,21 @@
                             alt="">
                     </div>
                     <div class="media-body">
-                        <h5 class="mb-0">Affordable Pricing</h5>
-                        At ngarsa digital, we provide relatively cheap and high-quality prices.
+                        <h5 class="mb-0" id="whyus-sub-title2">Affordable Pricing</h5>
+                        <span id="whyus-sub-desc2">
+                            At ngarsa digital, we provide relatively cheap and high-quality prices.
+                        </span>
                     </div>
                 </div>
                 <div class="media col-md-6 col-lg-4 fadeInRight wow" data-wow-duration="1s">
                     <div class="oval mr-4"><img class="align-self-start" src="assets/images/free-support.png" alt="">
                     </div>
                     <div class="media-body">
-                        <h5 class="mb-0">Free Support & Consultation</h5>
-                        At ngarsa digital, we support and provide consultation about creative digital and marketing
-                        communications strategy.
+                        <h5 class="mb-0" id="whyus-sub-title3">Free Support & Consultation</h5>
+                        <span id="whyus-sub-desc3">
+                            At ngarsa digital, we support and provide consultation about creative digital and marketing
+                            communications strategy.
+                        </span>
                     </div>
                 </div>
             </div>
@@ -410,10 +416,10 @@
                         <div class="col-6">
                             <h4 id="footer-ourservice">Our Services</h4>
                             <ul class="nav flex-column services-nav">
-                                <li class="nav-item"><a class="nav-link" href="#services">Web & Creative</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#services">Marketing Technology</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#services">Branding & Design</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#services">SEO & Analytics</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#services" id="footer-ourservice-item1">Web & Creative</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#services" id="footer-ourservice-item2">Marketing Technology</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#services" id="footer-ourservice-item3">Design & Branding</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#services" id="footer-ourservice-item4">SEO & Analytics</a></li>
                             </ul>
                         </div>
                         <div class="col-12">
